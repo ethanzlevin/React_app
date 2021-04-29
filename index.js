@@ -1,9 +1,17 @@
-const incrementBtn = document.getElementById('increment')
-const countdspl = document.getElementById('count')
+const reactContentRoot = document.getElementById("root")
 
-let currentCount = 0
+const app = () => {
+    const myItem = 'Item3'
+    return(
+        <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>{myItem.toUpperCase()}</li>
+    </ul>
+    )
 
-incrementBtn.addEventListener('click', ()=>{
-    currentCount ++
-    countdspl.innerText = currentCount
-})
+} 
+
+
+
+ReactDOM.render( app(), reactContentRoot)

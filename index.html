@@ -1,13 +1,15 @@
 <html lang="en">
     <head>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>React Tutorial</title>
     </head>
     <body>
-        <button id="increment">+1</button>
-        <div id="count">0</div>
+      <div id="root"></div>
 
-       <script src="index.js"></script>
+       <script type="text/babel" src="index.js"></script>
     </body>
 </html>
